@@ -50,6 +50,9 @@ public class RemoveNthNodeFromList {
             }
 
             //now fast is on the (n+1)th node and slow is still on ListNode(0)
+            //there will always be n nodes between these two pointers
+            //so, when fast will reach the end and it will be null,
+            //the slow will be on the n-1 node
             while (fast != null) {
                 slow = slow.next;
                 fast = fast.next;
