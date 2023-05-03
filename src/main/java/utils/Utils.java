@@ -17,4 +17,18 @@ public class Utils {
             System.out.println("Pair: (" + entry.getKey() + ", " + entry.getValue() + ")");
         }
     }
+
+
+    /**
+     * This method displays a 2D integer array.
+     *
+     * @param matrix a 2D integer array
+     */
+    public static void displayMatrix(int[][] matrix) {
+        for (int[] ints : matrix) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(ints[j] + " ");
+            }
+        }
+    }
 }
