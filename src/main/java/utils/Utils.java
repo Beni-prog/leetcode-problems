@@ -8,6 +8,26 @@ import java.util.Map;
 public class Utils {
 
     /**
+     * Definition for singly-linked list.
+     */
+    public static class ListNode {
+        public int val;
+        public ListNode next;
+
+        public ListNode() {
+        }
+
+        public ListNode(int val) {
+            this.val = val;
+        }
+
+        public ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
+    /**
      * This method is used to display a map.
      *
      * @param map a map
