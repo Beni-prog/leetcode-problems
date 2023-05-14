@@ -4,8 +4,28 @@ import java.util.Stack;
 
 /**
  * Decode string
+ * <p>
+ * Your input is a compressed string of the format number[string] and the decompressed output form should be the string
+ * written number times. For example:
+ * <p>
+ * The input
+ * <p>
+ * 3[abc]4[ab]c
+ * <p>
+ * Would be output as
+ * <p>
+ * abcabcabcababababc
+ * <p>
+ * Number can have more than one digit. For example, 10[a] is allowed, and just means aaaaaaaaaa
+ * <p>
+ * One repetition can occur inside another. For example, 2[3[a]b] decompresses into aaabaaab
  */
 public class DecompressString {
+
+    /**
+     * @param string a string formed out of digits, straight parentheses and letters
+     * @return a string formed out only of letters, repeated as much as required by the digits in the first string
+     */
     public static String decompressString(String string) {
         Stack<Integer> numbers = new Stack<>();
         Stack<String> letters = new Stack<>();
